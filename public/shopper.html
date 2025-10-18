@@ -6,10 +6,10 @@
     <title>Shooper Template</title>
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <style>
-        .Brand-title span
+        .Brand-title
         {
             font-weight: bold;
-            font-size: 20px;
+            font-size: 25px;
         }
         header
         {
@@ -36,7 +36,39 @@
         .bi-lightning-fill {
             color: gold;
         }
-       
+       section{
+        height: 400px;
+       }
+       footer{
+        background-color: black;
+        padding: 20px;
+        color: white;
+        display: grid;
+        grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+       }
+       .footer-title{
+        font-weight: bold;
+        margin-bottom: 30px;
+        font-family: Arial;
+       }
+       .footer-brand-title{
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial;
+       }
+       .footer-title ~ span{
+        display: block;
+        margin-bottom: 15px;
+       }
+       address span{
+        font-family: Arial;
+        display: block;
+        margin-bottom: 15px;
+       }
+       .footer-brand-title ~div span{
+        font-size: 10 px;
+        margin-right: 10px;
+       }
     </style>
 </head>
 <body>
@@ -65,5 +97,48 @@
     <span>HAPPY HOLIDAYS DEAL ON EVERYTHING</span>
     <span class="bi bi-lightning-fill"></span>
    </article>
+   <section>
+
+   </section>
+   <footer>
+    <div>
+        <div class="footer-brand-title">Shopper</div>
+        <div>
+        <span class="bi bi-facebook"></span>
+        <span class="bi bi-youtube"></span>
+        <span class="bi bi-twitter"></span>
+        <span class="bi bi-instagram"></span>
+        </div>
+    </div>
+    <div>
+     <div class="footer-title">Support</div>
+        <span>Contact Us</span>
+        <span>FAQs</span>
+        <span>Size Guide</span>
+        <span>Shopping&Returns</span>
+    </div>
+    <div>
+      <div class="footer-title">Shop</div>
+        <span>Men's shopping</span>
+        <span>Women's shopping</span>
+        <span>Kid's shopping</span>
+        <span>Discounts</span>
+    </div>
+    <div>
+     <div class="footer-title">COMPANY</div>
+        <span>Our story</span>
+        <span>careers</span>
+        <span>Terms&Conditions</span>
+        <span>Prvacy&Coockie policy</span>
+    </div>
+    <div>
+      <div class="footer-title">CONTACT</div>
+      <address>
+        <span>1-202-555-0105</span>
+        <span>1-202-555-0106</span>
+        <span>help@shopper.com</span>
+      </address>
+    </div>
+   </footer>
 </body>
 </html>
